@@ -16,7 +16,7 @@ spring:
     testOnBorrow: false
     testOnReturn: false
     filters: stat,wall,log4j
-    logSlowSql:true
+    logSlowSql: true
     #RabbitMQ 消息
   rabbitmq:
     host: localhost
