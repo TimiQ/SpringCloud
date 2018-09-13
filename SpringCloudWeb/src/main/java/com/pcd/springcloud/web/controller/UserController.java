@@ -1,0 +1,36 @@
+/**
+ * 
+ */
+package com.pcd.springcloud.web.controller;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.pcd.springcloud.web.model.User;
+import com.pcd.springcloud.web.service.UserServiceByFeign;
+
+/**
+ * @author TimiQ
+ *
+ */
+@RestController
+@RequestMapping("/user")
+public class UserController {
+	
+	@Resource
+	UserServiceByFeign userSeriveFeign;
+
+	
+	@ResponseBody
+	@RequestMapping(value = "/getUsersFeign")
+	public ResponseEntity<List<User>> getUsersFeign() {
+		return new ResponseEntity<List<User>>(userSeriveFeign.getAllUsers(), HttpStatus.OK);
+	}
+}
