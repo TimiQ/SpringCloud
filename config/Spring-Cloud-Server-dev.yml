@@ -6,23 +6,23 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     initialSize: 5
-    minIdle:5
-    maxActive:20
-    maxWait:60000
-    timeBetweenEvictionRunsMillis:60000
-    minEvictableIdleTimeMillis:30000
-    validationQuery:SELECT 1 FROM DUAL
-    testWhileIdle:true
-    testOnBorrow:false
-    testOnReturn:false
-    filters:stat,wall,log4j
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 30000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    filters: stat,wall,log4j
     logSlowSql:true
     #RabbitMQ 消息
   rabbitmq:
-    host:localhost
-    port:5672
-    username:admin
-    password:admin
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
 #Eureka服务注册
 eureka:
   client:
