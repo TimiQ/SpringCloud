@@ -10,3 +10,5 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:10001/eureka/
+system:
+  flag: 测试标识
