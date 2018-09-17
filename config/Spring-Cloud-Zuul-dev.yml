@@ -1,0 +1,20 @@
+spring:
+  #RabbitMQ 消息
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+#Eureka服务注册
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10001/eureka/
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: Spring-Cloud-Ribbon
+    api-b:
+      path: /api-b/**
+      serviceId: Spring-Cloud-Web
