@@ -30,5 +30,5 @@ eureka:
       defaultZone: http://localhost:10001/eureka/
 #Mybatis配置 
 mybatis:
-  mapper-locations: classpath:mapping/*.xml
+  mapper-locations: classpath:com/pcd/springcloud/mapper/*.xml
   type-aliases-package: com.pcd.springcloud.model
