@@ -20,12 +20,22 @@ import brave.sampler.Sampler;
 @EnableConfigServer
 @EnableEurekaClient
 public class ConfigApplication {
-	public static void main(String[] args) {
-		SpringApplication.run(ConfigApplication.class, args);
-	}
-	
-	@Bean
-	public Sampler defaultSampler() {
-		return Sampler.ALWAYS_SAMPLE;
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ConfigApplication.class, args);
+    }
+// 我是最新的都别惹我
+    
+    
+//  This is error 
+    
+/**** 你是大哥，我排在你后面 **/    
+    
+//  就是这行发生的冲突
+    
+//  我们不一样、不一样
+    
+    @Bean
+    public Sampler defaultSampler() {
+        return Sampler.ALWAYS_SAMPLE;
+    }
 }
