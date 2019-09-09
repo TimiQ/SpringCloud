@@ -26,6 +26,8 @@ public class ConfigApplication {
 // 我是最新的都别惹我
 	
 	
+// 	This is error 
+	
 	@Bean
 	public Sampler defaultSampler() {
 		return Sampler.ALWAYS_SAMPLE;
