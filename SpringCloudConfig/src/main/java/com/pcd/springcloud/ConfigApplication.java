@@ -25,7 +25,6 @@ public class ConfigApplication {
     }
 // 我是最新的都别惹我
     
-    
 //  This is error 
     
 /**** 你是大哥，我排在你后面 **/    
