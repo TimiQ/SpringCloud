@@ -23,6 +23,8 @@ public class ConfigApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ConfigApplication.class, args);
 	}
+// 我是最新的都别惹我
+	
 	
 	@Bean
 	public Sampler defaultSampler() {
