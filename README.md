@@ -9,3 +9,4 @@
   <br>7、所有配置文件动态配置，使用了Spring Cloud Bus和RabbitMQ。
 <br><br>所有样例都参照一位大神的CSDN博客
 <br><br>https://blog.csdn.net/forezp  方志鹏
+
